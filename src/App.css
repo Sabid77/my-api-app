@@ -1,38 +1,69 @@
-.App {
+body {
   text-align: center;
+  background-color: #1E1E1E;
+  color: burlywood;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#post-text
+{
+  text-transform: capitalize;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.post-container
+{
+  width: 20%;  
+  margin: 5% 3%;
+  height: 400px;
+  display:inline-grid;
+  grid-row-gap: 5px;
+  border: 1px solid blueviolet;
+  border-radius: 10px 10px 0 0;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+}
+.body-section
+{
+  display: flex;
+}
+.cart
+{
+  width: 20%;
+}
+.post-section
+{
+  width: 80%;
+  border-right: 0.5px solid burlywood;
+}
+#more-btn
+{
+  height: 40px;
+  background-color: goldenrod;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  color: aliceblue;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+#more-btn:hover
+{
+  background-color: rgb(190, 142, 19);
+  transition-property: all;
+  transition: 500ms;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive */
+@media only screen and (max-width: 1020px)
+{
+  .post-container
+  {
+    width: 30%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 720px)
+{
+  .post-container
+  {
+    width: 70%;
   }
 }
